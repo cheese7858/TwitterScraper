@@ -1,4 +1,4 @@
-twint==2.1.21
+twint==2.1.17
 streamlit==1.12.0
 streamlit-aggrid==0.3.2
 numpy==1.20.1
