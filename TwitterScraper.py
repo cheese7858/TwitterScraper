@@ -1,4 +1,3 @@
-
 import streamlit as st
 from st_aggrid import AgGrid
 from st_aggrid.grid_options_builder import GridOptionsBuilder
@@ -26,6 +25,8 @@ with st.form(key='Twitter_form'):
         c.Search = search_term
         c.Limit = limit
         c.Min_likes = likes
+        c.Lang = "en"
+        c.Filter_retweets = True
         c.Since = str(since)
         c.Until = str(until)
         c.Custom["tweet"] = ["id", "date", "time", "user_id", "username", "tweet", "likes_count"]
